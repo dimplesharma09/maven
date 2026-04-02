@@ -30,34 +30,22 @@ export default function HomeStudioIntro({ content }: HomeStudioIntroProps) {
           {content.eyebrow}
         </motion.p>
 
-        <div className="space-y-6">
+        <div>
           <motion.h2
             variants={fadeInUp}
-            className="font-display max-w-5xl text-[clamp(2rem,4.8vw,3.6rem)] font-medium leading-[1.02] tracking-[-0.04em] text-[#141414]"
+            className="font-display max-w-4xl text-[1.8rem] md:text-[2.2rem] lg:text-[2.6rem] font-normal leading-[1.4] tracking-[-0.01em] text-[#141414]"
           >
             {content.title}
           </motion.h2>
-          <motion.p
-            variants={fadeInUp}
-            className="font-editorial max-w-3xl text-base leading-7 text-[#3e3e3e] md:text-lg"
-          >
-            {content.description}
-          </motion.p>
-          <motion.p
-            variants={fadeInUp}
-            className="font-editorial max-w-3xl text-sm leading-7 text-[#666666] md:text-base"
-          >
-            {content.supportingCopy}
-          </motion.p>
         </div>
 
-        <motion.div variants={fadeInUp} className="lg:justify-self-end">
+        <motion.div variants={fadeInUp} className="lg:justify-self-end mt-4 lg:mt-0 lg:pt-2">
           <Link
             href={content.cta.href}
             className="inline-flex items-center gap-3 border-b border-[#111111] pb-1 text-[11px] font-medium uppercase tracking-[0.18em] text-[#111111] transition duration-300 hover:text-[#6b6b6b]"
           >
             {content.cta.label}
-            <span aria-hidden="true">/</span>
+            <span aria-hidden="true" className="text-[14px] leading-none mb-0.5">→</span>
           </Link>
         </motion.div>
       </motion.div>

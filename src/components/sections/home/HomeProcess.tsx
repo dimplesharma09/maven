@@ -18,27 +18,11 @@ type HomeProcessProps = {
 
 function ProcessWireframe() {
   return (
-    <svg
-      viewBox="0 0 520 420"
-      className="h-full w-full text-[#1a1a1a]"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M83 281L261 173L446 250L263 357L83 281Z" stroke="currentColor" strokeWidth="1.1" />
-      <path d="M83 281V174L263 67V357" stroke="currentColor" strokeWidth="1.1" />
-      <path d="M263 67L446 144V250" stroke="currentColor" strokeWidth="1.1" />
-      <path d="M144 247V163L323 86L401 119V207" stroke="currentColor" strokeWidth="1.1" strokeDasharray="5 5" />
-      <path d="M144 247L323 343L401 301V207" stroke="currentColor" strokeWidth="1.1" strokeDasharray="5 5" />
-      <path d="M214 203V296" stroke="currentColor" strokeWidth="1.1" />
-      <path d="M214 203L350 124" stroke="currentColor" strokeWidth="1.1" />
-      <path d="M214 296L350 214" stroke="currentColor" strokeWidth="1.1" />
-      <path d="M350 124V214" stroke="currentColor" strokeWidth="1.1" />
-      <path d="M111 145L291 251" stroke="currentColor" strokeWidth="1.1" strokeDasharray="5 5" />
-      <path d="M191 110L371 216" stroke="currentColor" strokeWidth="1.1" strokeDasharray="5 5" />
-      <ellipse cx="150" cy="372" rx="33" ry="10" stroke="currentColor" strokeWidth="1" />
-      <ellipse cx="261" cy="392" rx="43" ry="12" stroke="currentColor" strokeWidth="1" />
-      <ellipse cx="381" cy="367" rx="33" ry="10" stroke="currentColor" strokeWidth="1" />
-    </svg>
+    <img
+      src="/assets/Image/architect.svg"
+      alt="Architectural Wireframe"
+      className="h-full w-full object-contain"
+    />
   );
 }
 

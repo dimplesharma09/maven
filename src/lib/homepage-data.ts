@@ -130,20 +130,18 @@ export const heroContent: HeroContent = {
 export const studioIntro: StudioIntro = {
   eyebrow: "Who we are",
   title:
-    "Maven Projects is a modern architecture and interior design studio focused on warm contemporary spaces with a grounded, natural point of view.",
-  description:
-    "We shape homes, hospitality spaces, and institutions through strong concept work, clear detailing, and close coordination from the earliest brief through completion.",
-  supportingCopy:
-    "Every project is developed around clarity: a calm plan, a disciplined material palette, and a process that makes complex decisions feel measured and personal.",
+    "Minnaro Architects is an award-winning modern architecture firm based in New York. We specialize in contemporary design through our signature Natural Modern approach.",
+  description: "",
+  supportingCopy: "",
   cta: { label: "More about us", href: "/about" },
 };
 
 export const services: ServiceItem[] = [
   {
     index: "01",
-    title: "In house",
+    title: "Houses",
     description:
-      "Architecture, interiors, and documentation led under one roof so the design language stays coherent from the first idea.",
+      "To create beautiful, healthy buildings to empower families, uplift communities, and improve our living world.",
     icon: "house",
     linkLabel: "Architecture",
   },
@@ -151,15 +149,15 @@ export const services: ServiceItem[] = [
     index: "02",
     title: "Renovation",
     description:
-      "Reworking existing spaces with better flow, stronger light, and materials that feel contemporary without losing warmth.",
+      "Minnaro strives toward a socially just and equitable world where buildings positively contribute to the environment.",
     icon: "ruler",
     linkLabel: "Renovation",
   },
   {
     index: "03",
-    title: "Interior Design",
+    title: "Interior Desing",
     description:
-      "Joinery, lighting, finishes, and styling choices that turn a shell into a space with rhythm, softness, and purpose.",
+      "We honor the profound and nuanced ways humans and the environment interact with, use, and are shaped by our work.",
     icon: "sofa",
     linkLabel: "Interior design",
   },
