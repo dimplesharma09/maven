@@ -34,10 +34,12 @@ type ProjectFormValues = z.infer<typeof projectSchema>;
 
 export default function ProjectForm({ 
   initialData, 
-  onSuccess 
+  onSuccess,
+  onCancel
 }: { 
   initialData?: ProjectFormValues,
-  onSuccess?: () => void 
+  onSuccess?: (data: ProjectFormValues) => void,
+  onCancel?: () => void
 }) {
   const {
     register,
@@ -55,9 +57,9 @@ export default function ProjectForm({
 
   const onSubmit = async (data: ProjectFormValues) => {
     // Mocking API delay
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 800));
     console.log("Form Submitted:", data);
-    onSuccess?.();
+    onSuccess?.(data);
   };
 
   return (
@@ -157,6 +159,7 @@ export default function ProjectForm({
         <Button 
           type="button" 
           variant="ghost" 
+          onClick={onCancel}
           className="text-gray-500 font-bold uppercase tracking-widest text-xs h-11"
         >
           Cancel

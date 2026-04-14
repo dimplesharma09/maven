@@ -7,18 +7,27 @@ import {
   Poppins,
 } from "next/font/google";
 
-import Footer from "@/components/sections/Footer";
-import Header from "@/components/sections/Header";
+import NavigationWrapper from "@/components/layout/NavigationWrapper";
 import "@/styles/index.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
+
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   variable: "--font-poppins",
 });
-const manrope = Manrope({ subsets: ["latin"], variable: "--font-editorial" });
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-editorial",
+});
+
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -32,6 +41,17 @@ export const metadata: Metadata = {
   },
   description:
     "Minnaro Architects is a contemporary architecture and interiors studio creating calm, refined residential and commercial spaces.",
+
+  // ✅ FAVICON ADDED HERE
+  icons: {
+    icon: [
+      { url: "/assets/Image/favicon-3.svg" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -44,9 +64,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${montserrat.variable} ${poppins.variable} ${manrope.variable} ${cormorant.variable} font-inter text-brand-text`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <NavigationWrapper>
+          {children}
+        </NavigationWrapper>
       </body>
     </html>
   );
