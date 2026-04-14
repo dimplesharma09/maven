@@ -29,50 +29,16 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 
-const projects = [
-  {
-    id: "PROJ-001",
-    name: "Skyline Villa",
-    category: "Residential",
-    location: "Malibu, CA",
-    status: "In Progress",
-    lastUpdated: "2024-03-25",
-  },
-  {
-    id: "PROJ-002",
-    name: "Nexus Office Hub",
-    category: "Commercial",
-    location: "Austin, TX",
-    status: "Completed",
-    lastUpdated: "2024-02-12",
-  },
-  {
-    id: "PROJ-003",
-    name: "Lakeside Retreat",
-    category: "Residential",
-    location: "Lake Tahoe, NV",
-    status: "Planning",
-    lastUpdated: "2024-04-01",
-  },
-  {
-    id: "PROJ-004",
-    name: "Urban Loft",
-    category: "Interior",
-    location: "New York, NY",
-    status: "In Progress",
-    lastUpdated: "2024-03-28",
-  },
-  {
-    id: "PROJ-005",
-    name: "Golden Gate Hotel",
-    category: "Hospitality",
-    location: "San Francisco, CA",
-    status: "Planning",
-    lastUpdated: "2024-03-15",
-  },
-];
+import { Project } from "@/app/admin/projects/page";
 
-export default function ProjectTable() {
+interface ProjectTableProps {
+  projects: Project[];
+  onDelete: (id: string) => void;
+  onEdit: (project: Project) => void;
+  onAddNew?: () => void;
+}
+
+export default function ProjectTable({ projects, onDelete, onEdit, onAddNew }: ProjectTableProps) {
   return (
     <div className="space-y-4">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white p-4 rounded-xl border border-gray-200">
@@ -85,7 +51,10 @@ export default function ProjectTable() {
         </div>
         <div className="flex items-center gap-3 w-full sm:w-auto">
           <Button variant="outline" className="flex-1 sm:flex-none">Filter</Button>
-          <Button className="flex-1 sm:flex-none bg-[#C25E4B] hover:bg-[#A34A39] text-white">
+          <Button 
+            onClick={onAddNew}
+            className="flex-1 sm:flex-none bg-[#C25E4B] hover:bg-[#A34A39] text-white"
+          >
             <Plus size={16} className="mr-2" /> New Project
           </Button>
         </div>
@@ -138,14 +107,20 @@ export default function ProjectTable() {
                     <DropdownMenuContent align="end" className="w-48">
                       <DropdownMenuLabel>Actions</DropdownMenuLabel>
                       <DropdownMenuSeparator />
-                      <DropdownMenuItem className="flex items-center gap-2">
+                      <DropdownMenuItem 
+                        onClick={() => onEdit(project)}
+                        className="flex items-center gap-2 cursor-pointer"
+                      >
                         <Pencil size={14} /> Edit Details
                       </DropdownMenuItem>
-                      <DropdownMenuItem className="flex items-center gap-2">
+                      <DropdownMenuItem className="flex items-center gap-2 cursor-pointer">
                         <ExternalLink size={14} /> View Live Page
                       </DropdownMenuItem>
                       <DropdownMenuSeparator />
-                      <DropdownMenuItem className="flex items-center gap-2 text-red-600 focus:text-red-700">
+                      <DropdownMenuItem 
+                        onClick={() => onDelete(project.id)}
+                        className="flex items-center gap-2 text-red-600 focus:text-red-700 cursor-pointer"
+                      >
                         <Trash2 size={14} /> Delete Project
                       </DropdownMenuItem>
                     </DropdownMenuContent>
@@ -153,6 +128,13 @@ export default function ProjectTable() {
                 </TableCell>
               </TableRow>
             ))}
+            {projects.length === 0 && (
+              <TableRow>
+                <TableCell colSpan={7} className="h-32 text-center text-gray-500">
+                  No projects found. Add your first project to get started.
+                </TableCell>
+              </TableRow>
+            )}
           </TableBody>
         </Table>
       </div>
