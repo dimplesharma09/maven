@@ -53,8 +53,8 @@ export default function Footer() {
 
         <div className="border-b border-[#d7d7d7] px-5 py-8 md:flex md:min-h-[220px] md:border-r md:flex-col md:items-center md:justify-center md:px-8">
           <img
-            src="/assets/Image/mp-dark-logo.svg"
-            alt="Minnaro Architects"
+            src="/assets/Image/Maven-logo.jpeg"
+            alt="Maven Projects"
             className="h-10 w-auto"
           />
           <div className="mt-6 flex items-center gap-4">
@@ -98,7 +98,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto flex max-w-[1500px] flex-col gap-3 px-5 py-5 text-[10px] uppercase tracking-[0.22em] text-[#777777] md:flex-row md:items-center md:justify-between md:px-8">
-        <p className="font-editorial">Copyright 2026 Minnaro Architects</p>
+        <p className="font-editorial">Copyright 2026 Maven Projects</p>
         <Link href="#hero" className="font-editorial text-[#111111]">
           Back to top
         </Link>
