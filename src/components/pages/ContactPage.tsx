@@ -11,12 +11,12 @@ const offices = [
   {
     label: "Studio",
     title: "Jaipur",
-    details: ["105 Mohan Nagar", "Jaipur, Rajasthan", "India"],
+    details: ["A-291, JDA Staff colony, Mahal Road, Jagatpura, 302017"],
   },
   {
     label: "Appointments",
     title: "By prior schedule",
-    details: ["Monday to Saturday", "10:00 AM to 6:30 PM", "Site visits by request"],
+    details: ["Monday to Saturday", "9:00 AM to 7:00 PM", "Sunday", " 10:00 AM to 6:00 PM"],
   },
 ];
 

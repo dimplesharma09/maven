@@ -301,15 +301,15 @@ export const homeFooterCta: FeatureBanner = {
   eyebrow: "Let's work together",
   title: "Let's create a home that feels composed, generous, and fully yours.",
   image: "/assets/Image/about-image.jpg",
-  cta: { label: "Book a consultation", href: "mailto:hello@minnaro.com" },
+  cta: { label: "Book a consultation", href: "mailto:mavenprojectshq@gmail.com" },
 };
 
 export const siteContact = {
-  phoneLabel: "+1 212 555 0199",
-  phoneHref: "tel:+12125550199",
-  emailLabel: "hello@minnaro.com",
-  emailHref: "mailto:hello@minnaro.com",
-  address: "105 Central Park West, New York, NY",
+  phoneLabel: "+91 8209117064",
+  phoneHref: "tel:+91 8209117064",
+  emailLabel: "mavenprojectshq@gmail.com",
+  emailHref: "mailto:mavenprojectshq@gmail.com",
+  address: " A-291, JDA Staff colony, Mahal Road, Jagatpura, 302017",
 };
 
 export const footerQuickLinks: ContactLink[] = [
@@ -323,8 +323,8 @@ export const footerContactActions: ContactLink[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { label: "Instagram", href: "https://instagram.com/" },
-  { label: "Facebook", href: "https://facebook.com/" },
+  { label: "Instagram", href: "https://www.instagram.com/maven.projects.official?igsh=MTI1ZDl1aXFqdzI2bA%3D%3D" },
+  { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61583407575742" },
   { label: "LinkedIn", href: "https://linkedin.com/" },
   { label: "YouTube", href: "https://youtube.com/" },
 ];

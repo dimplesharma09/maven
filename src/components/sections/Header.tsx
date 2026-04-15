@@ -23,7 +23,7 @@ const Header = () => {
         <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-5 px-4 py-3 md:px-8 lg:px-10">
           <Link href="/" className="shrink-0">
             <img
-              src="/assets/Image/mp-dark-logo.svg"
+              src="/assets/Image/Maven-logo.jpeg"
               alt="Minnaro Architects"
               className="h-8 w-auto md:h-9"
             />
