@@ -25,7 +25,7 @@ export default function HomeHero({ content }: HomeHeroProps) {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.08)_0%,rgba(10,10,10,0.18)_50%,rgba(10,10,10,0.35)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.05)_0%,rgba(10,10,10,0.1)_50%,rgba(10,10,10,0.2)_100%)]" />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-[1500px] px-5 pb-8 pt-28 md:px-8 md:pb-10 lg:px-10 lg:pt-32">
@@ -38,7 +38,7 @@ export default function HomeHero({ content }: HomeHeroProps) {
           <p className="font-editorial text-[10px] uppercase tracking-[0.28em] text-white/88 md:text-xs">
             {content.eyebrow}
           </p>
-          <h1 className="font-display mt-5 text-[clamp(3.5rem,9vw,7rem)] font-medium leading-[0.94] tracking-[-0.045em] text-white">
+          <h1 className="font-display mt-5 text-[clamp(2.75rem,7.5vw,5.5rem)] font-medium leading-[0.94] tracking-[-0.045em] text-white">
             {content.title}
           </h1>
         </motion.div>

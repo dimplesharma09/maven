@@ -142,7 +142,7 @@ export default function InquiriesPage() {
                       className={cn(
                         "text-[10px] font-black uppercase tracking-widest px-2 py-0.5 border-none",
                         inq.status === "New" ? "bg-[#C25E4B]/10 text-[#C25E4B]" : 
-                        inq.status === "In Progress" ? "bg-blue-50 text-blue-600" : 
+                        inq.status === "In Progress" ? "bg-gray-100 text-gray-700" : 
                         "bg-green-50 text-green-600"
                       )}
                     >

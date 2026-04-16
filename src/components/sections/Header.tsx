@@ -23,9 +23,9 @@ const Header = () => {
         <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-5 px-4 py-3 md:px-8 lg:px-10">
           <Link href="/" className="shrink-0">
             <img
-              src="/assets/Image/Maven-logo.jpeg"
-              alt="Minnaro Architects"
-              className="h-8 w-auto md:h-9"
+              src="/assets/Image/New-Logo.png"
+              alt="Maven Projects"
+              className="h-12 w-auto md:h-16"
             />
           </Link>
 
@@ -37,8 +37,8 @@ const Header = () => {
                 className={cn(
                   "font-editorial text-[10px] uppercase tracking-[0.22em] transition duration-300 md:text-xs",
                   pathname === item.href
-                    ? "text-[#6c63ff]"
-                    : "text-[#111111] hover:text-[#6c63ff]"
+                    ? "text-[#111111] font-bold"
+                    : "text-[#111111] hover:font-bold"
                 )}
               >
                 {item.label}
@@ -47,12 +47,6 @@ const Header = () => {
           </nav>
 
           <div className="hidden items-center gap-3 md:flex">
-            <Link
-              href={ctaHref}
-              className="inline-flex items-center justify-center bg-[#6c63ff] px-4 py-2 text-[10px] font-medium uppercase tracking-[0.18em] text-white transition duration-300 hover:bg-[#584cf6] md:text-xs"
-            >
-              Contact us
-            </Link>
             <button
               type="button"
               onClick={() => setMobileOpen(true)}
@@ -89,7 +83,7 @@ const Header = () => {
       >
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="font-display text-2xl text-[#111111]">Minnaro Architects</p>
+            <p className="font-display text-2xl text-[#111111]">Maven Projects</p>
             <p className="font-editorial mt-2 text-sm text-[#666666]">
               Architecture, interiors, and modern residences.
             </p>
@@ -112,7 +106,7 @@ const Header = () => {
               onClick={() => setMobileOpen(false)}
               className={cn(
                 "font-display block text-[1.75rem]",
-                pathname === item.href ? "text-[#6c63ff]" : "text-[#111111]"
+                pathname === item.href ? "text-[#111111] font-bold" : "text-[#111111]"
               )}
             >
               {item.label}

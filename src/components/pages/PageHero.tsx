@@ -44,7 +44,7 @@ export default function PageHero({
               <div className="mt-8">
                 <Link
                   href={primaryCta.href}
-                  className="inline-flex w-full items-center justify-center bg-[#6c63ff] px-5 py-3 text-[11px] font-medium uppercase tracking-[0.18em] text-white transition duration-300 hover:bg-[#584cf6] sm:w-fit"
+                  className="inline-flex w-full items-center justify-center bg-[#111111] px-5 py-3 text-[11px] font-medium uppercase tracking-[0.18em] text-white transition duration-300 hover:bg-[#000000] sm:w-fit"
                 >
                   {primaryCta.label}
                 </Link>

@@ -198,7 +198,7 @@ export default function AdminDashboardPage() {
                 {recentActivity.map((item) => (
                   <div key={item.id} className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center border border-gray-100">
-                      {item.type === "inquiry" ? <MessageSquare size={18} className="text-blue-500" /> : <Briefcase size={18} className="text-purple-500" />}
+                      {item.type === "inquiry" ? <MessageSquare size={18} className="text-[#121212]" /> : <Briefcase size={18} className="text-purple-500" />}
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between mb-1">

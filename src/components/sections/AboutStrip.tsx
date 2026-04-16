@@ -39,23 +39,20 @@ export default function AboutSection() {
           {/* 🔹 Left Column (Text) */}
           <motion.div className="lg:col-span-2" variants={textVariants}>
             <h2 className="text-3xl sm:text-4xl font-semibold text-white mb-8">
-              ABOUT <span className="text-[#DEBB70]"> MINNARO</span> 
-              {/* 'Minnaro' version placeholder update */}
+              ABOUT <span className="text-[#DEBB70]"> MAVEN</span> 
             </h2>
             <div className="space-y-6 text-lg text-gray-300">
               <p>
-                Every structure however large or small is an entity with its own
-                characteristics and interactions generating emotions and
-                experiences like a living being.
+                We believe that every structure has its own character, designed to create meaningful interactions and 
+                lasting emotions for those who inhabit it.
               </p>
               <p>
-                We work on: Playing with form, space, function and colours to
-                create magnificent possibilities.
+                Our studio focuses on the harmony of form, function, and color to create possibilities that are both 
+                practical and inspiring.
               </p>
               <p>
-                Our Studio is centered on aesthetics combined with site specific
-                design, innovation and proven building techniques executed by
-                experienced professionals.
+                We blend modern aesthetics with site-specific needs and proven construction techniques, all delivered 
+                with the precision and warmth your project deserves.
               </p>
             </div>
           </motion.div>
@@ -73,7 +70,7 @@ export default function AboutSection() {
               <div >
               <img
                 src="/assets/Image/about-img.jpg" 
-                alt="Minnaro Team"
+                alt="Maven Projects Team"
               
                 className="w-full h-1/2 object-cover grayscale" // Grayscale filter
               />
