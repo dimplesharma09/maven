@@ -68,7 +68,7 @@ export default function SettingsPage() {
                 <CardContent className="space-y-4 pt-6 border-t border-gray-50">
                   <div className="flex items-center justify-between text-xs">
                     <span className="text-gray-400 font-bold uppercase tracking-widest">Username</span>
-                    <span className="font-bold text-[#121212]">@minnaro_admin</span>
+                    <span className="font-bold text-[#121212]">@maven_admin</span>
                   </div>
                   <div className="flex items-center justify-between text-xs">
                     <span className="text-gray-400 font-bold uppercase tracking-widest">Access Level</span>
@@ -88,20 +88,20 @@ export default function SettingsPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                        <Label className="text-[10px] font-black uppercase tracking-widest text-gray-500">First Name</Label>
-                       <Input className="bg-gray-50 border-gray-200" defaultValue="Minnaro" />
+                       <Input className="bg-gray-50 border-gray-200" defaultValue="Maven" />
                     </div>
                     <div className="space-y-2">
                        <Label className="text-[10px] font-black uppercase tracking-widest text-gray-500">Last Name</Label>
-                       <Input className="bg-gray-50 border-gray-200" defaultValue="Architects" />
+                       <Input className="bg-gray-50 border-gray-200" defaultValue="Projects" />
                     </div>
                   </div>
                   <div className="space-y-2">
                      <Label className="text-[10px] font-black uppercase tracking-widest text-gray-500">Email Address</Label>
-                     <Input className="bg-gray-50 border-gray-200" defaultValue="hello@minnaro.com" />
+                     <Input className="bg-gray-50 border-gray-200" defaultValue="mavenprojectshq@gmail.com" />
                   </div>
                   <div className="space-y-2">
                      <Label className="text-[10px] font-black uppercase tracking-widest text-gray-500">Bio / Professional Summary</Label>
-                     <Textarea className="bg-gray-50 border-gray-200 resize-none" rows={4} defaultValue="Founder and lead architect at Minnaro Studio. Focused on minimalist, robust designs." />
+                     <Textarea className="bg-gray-50 border-gray-200 resize-none" rows={4} defaultValue="Lead designer at Maven Projects. Focused on modern, human-centered architectural and interior solutions." />
                   </div>
                   <div className="flex justify-end pt-4">
                      <Button className="bg-[#121212] hover:bg-black text-white px-8 uppercase font-bold text-xs tracking-widest">
@@ -132,7 +132,7 @@ export default function SettingsPage() {
                               <Smartphone size={18} className="text-gray-400" />
                            </div>
                            <div className="flex-1">
-                              <Input className="h-10 bg-gray-50 border-gray-200" defaultValue="+1 212 555 0199" />
+                              <Input className="h-10 bg-gray-50 border-gray-200" defaultValue="+91 8209117064" />
                            </div>
                         </div>
                         <div className="flex items-center gap-3">
@@ -140,7 +140,7 @@ export default function SettingsPage() {
                               <MapPin size={18} className="text-gray-400" />
                            </div>
                            <div className="flex-1">
-                              <Input className="h-10 bg-gray-50 border-gray-200" defaultValue="105 Central Park West, New York, NY" />
+                              <Input className="h-10 bg-gray-50 border-gray-200" defaultValue="A-291, JDA Staff colony, Mahal Road, Jagatpura, Jaipur" />
                            </div>
                         </div>
                       </div>
@@ -148,7 +148,7 @@ export default function SettingsPage() {
 
                     <div className="space-y-4">
                        <h4 className="text-xs font-black uppercase tracking-[0.2em] text-[#C25E4B]">Studio Motto</h4>
-                       <Textarea className="bg-gray-50 border-gray-200 min-h-[140px]" defaultValue="Designing with discipline, warmth, and long-term clarity. Beyond architecture, creating places for learning, culture, and everyday calm." />
+                       <Textarea className="bg-gray-50 border-gray-200 min-h-[140px]" defaultValue="Designing with discipline, warmth, and long-term clarity. Creating homes that feel natural, spacious, and fully yours." />
                     </div>
                   </div>
                   

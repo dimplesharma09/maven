@@ -174,7 +174,7 @@ export default function ProjectsPage() {
             <p className="text-xs text-gray-400 mt-1 font-medium">Projects documented in system</p>
           </div>
           <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
-            <p className="text-[10px] font-black uppercase tracking-widest text-blue-600 mb-2">Currently Active</p>
+            <p className="text-[10px] font-black uppercase tracking-widest text-[#121212] mb-2">Currently Active</p>
             <p className="text-3xl font-display font-black text-[#121212]">
               {projects.filter(p => ["In Progress", "Planning"].includes(p.status)).length}
             </p>

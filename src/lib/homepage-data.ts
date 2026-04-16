@@ -107,33 +107,32 @@ export type AwardItem = {
 };
 
 export const siteNavigation: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Selected Work", href: "/selected-work" },
-  { label: "Process", href: "/process" },
-  { label: "Media", href: "/media" },
-  { label: "Contact", href: "/contact" },
+  { label: "HOME", href: "/" },
+  { label: "ABOUT US", href: "/about" },
+  { label: "SERVICES", href: "/services" },
+  { label: "BLOG", href: "/blog" },
+  { label: "PORTFOLIO", href: "/portfolio" },
+  { label: "CONTACT US", href: "/contact" },
 ];
 
 export const heroContent: HeroContent = {
-  eyebrow: "Featured Project / 2024",
-  title: "ARCHITECTURAL EXCELLENCE",
+  eyebrow: "Recent Work / Jaipur",
+  title: "CREATING HOMES THAT FEEL NATURAL AND SPACIOUS",
   image: "/assets/Image/about-us-img.jpeg",
-  primaryCta: { label: "See selected work", href: "#projects" },
-  secondaryCta: { label: "Get in touch", href: "#contact" },
+  primaryCta: { label: "Explore portfolio", href: "/portfolio" },
+  secondaryCta: { label: "Start a conversation", href: "/contact" },
   supportingCaption:
-    "Beyond architecture, creating places for learning, culture, and everyday calm.",
-  metaLabel: "Minnaro Architects / Architecture and Interior Design",
+    "Creating homes that feel natural, spacious, and fully yours.",
+  metaLabel: "Maven Projects | Architecture and Interior Design in Jaipur",
 };
 
 export const studioIntro: StudioIntro = {
-  eyebrow: "Who we are",
+  eyebrow: "Your Partner in Design",
   title:
-    "Minnaro Architects is an award-winning modern architecture firm based in New York. We specialize in contemporary design through our signature Natural Modern approach.",
+    "Maven Projects is a premier architecture and interior design studio based in Jaipur. We specialize in contemporary spaces that prioritize clarity, comfort, and character.",
   description: "",
   supportingCopy: "",
-  cta: { label: "More about us", href: "/about" },
+  cta: { label: "Learn more about us", href: "/about" },
 };
 
 export const services: ServiceItem[] = [
@@ -141,25 +140,25 @@ export const services: ServiceItem[] = [
     index: "01",
     title: "Architecture",
     description:
-      "We design beautiful, healthy buildings that empower families, uplift communities, and harmonize with our living world.",
+      "We design safe, beautiful, and sustainable homes that stand the test of time, from Jagatpura to C-Scheme.",
     icon: "house",
     linkLabel: "Architecture",
   },
   {
     index: "02",
-    title: "Renovation",
+    title: "Interior Design",
     description:
-      "Breathing new life into existing structures through thoughtful redesign, sustainable upgrades, and structural refinement.",
-    icon: "ruler",
-    linkLabel: "Renovation",
+      "Bespoke interiors that blend style with functionality, creating spaces you’ll love to live in across Jaipur.",
+    icon: "sofa",
+    linkLabel: "Interior design",
   },
   {
     index: "03",
-    title: "Interior Design",
+    title: "Renovation",
     description:
-      "Honoring the profound and nuanced ways humans interact with, utilize, and are shaped by our intimately crafted spaces.",
-    icon: "sofa",
-    linkLabel: "Interior design",
+      "Breathing new life into old spaces with modern aesthetics, high-quality materials, and structural upgrades.",
+    icon: "ruler",
+    linkLabel: "Renovation",
   },
 ];
 
@@ -191,11 +190,11 @@ export const featuredProjects: ProjectItem[] = [
 ];
 
 export const processIntro = {
-  eyebrow: "Our process",
+  eyebrow: "Our Process",
   title:
-    "Our process starts with the first conversation and continues through move-in, guiding you from understanding to planning and design opportunities.",
+    "We guide you from the first conversation through to move-in, turning complex planning into a clear, collaborative journey.",
   description:
-    "We keep the workflow clear, collaborative, and detail-led so the design evolves with confidence instead of guesswork.",
+    "Every decision is led by detail and transparency, ensuring the final design evolves with precision and absolute confidence.",
 };
 
 export const processSteps: ProcessStep[] = [
@@ -227,31 +226,31 @@ export const featureBanner: FeatureBanner = {
   cta: { label: "Discover more", href: "/about" },
 };
 
-export const projectMetrics: StatItem[] = [
-  { value: "10+", label: "Years experience" },
-  { value: "200+", label: "Concepts and studies" },
-  { value: "100+", label: "Materials and vendor partners" },
-  { value: "400+", label: "Technical drawings delivered" },
-];
+// export const projectMetrics: StatItem[] = [
+//   { value: "10+", label: "Years experience" },
+//   { value: "200+", label: "Concepts and studies" },
+//   { value: "100+", label: "Materials and vendor partners" },
+//   { value: "400+", label: "Technical drawings delivered" },
+// ];
 
-export const awards: AwardItem[] = [
-  { year: "2024", title: "Best contemporary residence", source: "Indian Design Awards" },
-  { year: "2023", title: "Interior concept showcase", source: "Build Review" },
-  { year: "2023", title: "Emerging architecture practice", source: "Design Dialogues" },
-  { year: "2022", title: "Residential detailing award", source: "Habitat Interiors" },
-];
+// export const awards: AwardItem[] = [
+//   { year: "2024", title: "Best contemporary residence", source: "Indian Design Awards" },
+//   { year: "2023", title: "Interior concept showcase", source: "Build Review" },
+//   { year: "2023", title: "Emerging architecture practice", source: "Design Dialogues" },
+//   { year: "2022", title: "Residential detailing award", source: "Habitat Interiors" },
+// ];
 
 export const founderFeature: FounderFeature = {
-  eyebrow: "Studio note",
+  eyebrow: "Our Philosophy",
   title: "Designing with discipline, warmth, and long-term clarity.",
   quote:
-    "Every successful project balances concept and control. The ambition matters, but so does the patience to refine every line until it feels inevitable.",
+    "Every successful project balances concept and control. We believe a home should be as functional as it is beautiful, tailored to the people who live there.",
   description:
-    "Our studio pairs strong architectural thinking with calm execution support so the final space feels as resolved as the early vision promised.",
+    "Our studio pairs strong architectural thinking with calm execution support so the final space feels exactly as we promised from day one.",
   image: "/assets/Image/team-img.jpg",
   secondaryImage: "/assets/Image/project-image2.png",
-  role: "Architecture / Interiors / Delivery",
-  name: "Minnaro Architects",
+  role: "Architecture / Interiors / Execution",
+  name: "Maven Projects",
   cta: { label: "Meet the studio", href: "/about" },
 };
 
@@ -268,7 +267,7 @@ export const journalEntries: JournalItem[] = [
     title: "Designing joinery that feels architectural",
     excerpt:
       "Interior details can reinforce the larger spatial idea when geometry, texture, and light are handled together.",
-    image: "/assets/minnaro/p1.png",
+    image: "/assets/Image/project-image1.png",
     href: "/portfolio",
     meta: "Press release",
   },
@@ -284,9 +283,9 @@ export const journalEntries: JournalItem[] = [
 
 export const testimonial: TestimonialContent = {
   quote:
-    "Minnaro Architects gave our home a rare sense of stillness. Every room feels generous, resolved, and beautifully easy to live in.",
+    "Maven Projects gave our home a rare sense of stillness. Every room feels generous, resolved, and beautifully easy to live in.",
   name: "Residential Client",
-  role: "New York",
+  role: "Jaipur",
   image: "/assets/Image/testimonials-img.png",
 };
 
@@ -298,10 +297,10 @@ export const collaborationLogos: LogoItem[] = [
 ];
 
 export const homeFooterCta: FeatureBanner = {
-  eyebrow: "Let's work together",
+  eyebrow: "Let's Talk About Your Project",
   title: "Let's create a home that feels composed, generous, and fully yours.",
   image: "/assets/Image/about-image.jpg",
-  cta: { label: "Book a consultation", href: "mailto:mavenprojectshq@gmail.com" },
+  cta: { label: "Book a consultation", href: "/contact" },
 };
 
 export const siteContact = {
@@ -309,17 +308,28 @@ export const siteContact = {
   phoneHref: "tel:+91 8209117064",
   emailLabel: "mavenprojectshq@gmail.com",
   emailHref: "mailto:mavenprojectshq@gmail.com",
-  address: " A-291, JDA Staff colony, Mahal Road, Jagatpura, 302017",
+  address: " A-291, JDA Staff colony, Mahal Road, Jagatpura, Jaipur, Rajasthan 302017",
 };
 
 export const footerQuickLinks: ContactLink[] = [
   ...siteNavigation,
 ];
 
+export const faqItems = [
+  {
+    question: "How do I find a reliable architect or interior designer in Jaipur?",
+    answer: "The best approach is to find a studio that aligns with your style and values. We focus on creating modern, balanced homes for families across Jaipur, including areas like Vaishali Nagar and Malviya Nagar."
+  },
+  {
+    question: "Can Maven Projects manage my entire construction project?",
+    answer: "Yes, we provide end-to-end project management. We handle everything from the initial design to on-site execution and coordination, so your project stays on track and within budget."
+  }
+];
+
 export const footerContactActions: ContactLink[] = [
-  { label: "Email the studio", href: siteContact.emailHref },
-  { label: "Schedule a call", href: siteContact.phoneHref },
-  { label: "View selected work", href: "/selected-work" },
+  { label: "Book a consultation", href: siteContact.emailHref },
+  { label: "Speak to our team", href: siteContact.phoneHref },
+  { label: "Our selected work", href: "/portfolio" },
 ];
 
 export const socialLinks: SocialLink[] = [

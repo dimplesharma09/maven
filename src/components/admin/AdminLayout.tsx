@@ -58,7 +58,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         <div className="flex h-16 items-center justify-between px-6 border-b border-white/10">
           {!isSidebarCollapsed && (
             <span className="text-lg font-display font-black tracking-tighter uppercase text-[#C25E4B]">
-              Minnaro
+              Maven
             </span>
           )}
           <Button
@@ -123,7 +123,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
               <SheetContent side="left" className="p-0 bg-[#121212] text-white border-0 w-64">
                 <div className="flex h-16 items-center px-6 border-b border-white/10">
                   <span className="text-lg font-display font-black tracking-tighter uppercase text-[#C25E4B]">
-                    Minnaro
+                    Maven
                   </span>
                 </div>
                 <nav className="p-4 space-y-1">

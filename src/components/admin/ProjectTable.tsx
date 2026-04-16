@@ -89,7 +89,7 @@ export default function ProjectTable({ projects, onDelete, onEdit, onAddNew }: P
                     className={cn(
                       "text-[10px] uppercase font-black tracking-tighter px-2 py-0.5",
                       project.status === "Completed" ? "bg-green-100 text-green-700 hover:bg-green-100" : 
-                      project.status === "In Progress" ? "bg-blue-100 text-blue-700 hover:bg-blue-100" : 
+                      project.status === "In Progress" ? "bg-gray-100 text-gray-700 hover:bg-gray-200" : 
                       "bg-amber-100 text-amber-700 hover:bg-amber-100"
                     )}
                   >

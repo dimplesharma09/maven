@@ -35,11 +35,12 @@ export default function ContactPage() {
                 Contact
               </p>
               <h1 className="font-display mt-4 max-w-4xl text-[clamp(2.5rem,5vw,4.6rem)] font-medium leading-[0.98] tracking-[-0.045em] text-[#111111]">
-                Get in touch with Minnaro Architects.
+                Get in touch with Maven Projects.
               </h1>
               <p className="font-editorial mt-6 max-w-2xl text-sm leading-7 text-[#555555] md:text-base">
-                Share your project brief, timeline, location, and the kind of space you want to create. We will come
-                back with the right next step, whether that is an introduction call, a studio meeting, or a site visit.
+                Share your project brief, timeline, location, and the kind of space you want to create. We usually respond
+                to all inquiries within 24 hours. Our goal is to provide you with clear answers and helpful guidance
+                from day one.
               </p>
 
               <div className="mt-10 grid gap-8 border-t border-[#d7d7d7] pt-6 md:grid-cols-3">
@@ -94,7 +95,7 @@ export default function ContactPage() {
                       type="text"
                       name="subject"
                       placeholder="Your name"
-                      className="mt-2 w-full border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#6c63ff]"
+                      className="mt-2 w-full border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#111111]"
                     />
                   </label>
                   <label className="block">
@@ -105,7 +106,7 @@ export default function ContactPage() {
                       type="email"
                       name="email"
                       placeholder="you@example.com"
-                      className="mt-2 w-full border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#6c63ff]"
+                      className="mt-2 w-full border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#111111]"
                     />
                   </label>
                 </div>
@@ -119,7 +120,7 @@ export default function ContactPage() {
                       type="tel"
                       name="phone"
                       placeholder="+91"
-                      className="mt-2 w-full border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#6c63ff]"
+                      className="mt-2 w-full border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#111111]"
                     />
                   </label>
                   <label className="block">
@@ -128,7 +129,7 @@ export default function ContactPage() {
                     </span>
                     <select
                       name="project"
-                      className="mt-2 w-full border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#6c63ff]"
+                      className="mt-2 w-full border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#111111]"
                     >
                       <option>Residence</option>
                       <option>Interiors</option>
@@ -147,7 +148,7 @@ export default function ContactPage() {
                     type="text"
                     name="location"
                     placeholder="City / Site location"
-                    className="mt-2 w-full border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#6c63ff]"
+                    className="mt-2 w-full border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#111111]"
                   />
                 </label>
 
@@ -159,13 +160,13 @@ export default function ContactPage() {
                     name="body"
                     rows={6}
                     placeholder="Share size, timeline, goals, and any links or references."
-                    className="mt-2 w-full resize-none border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#6c63ff]"
+                    className="mt-2 w-full resize-none border border-[#d7d7d7] bg-white px-4 py-3 text-sm text-[#111111] outline-none transition focus:border-[#111111]"
                   />
                 </label>
 
                 <button
                   type="submit"
-                  className="inline-flex w-full items-center justify-center bg-[#6c63ff] px-5 py-3 text-[11px] font-medium uppercase tracking-[0.18em] text-white transition duration-300 hover:bg-[#584cf6] sm:w-fit"
+                  className="w-full bg-[#111111] hover:bg-[#000000] text-white py-6 rounded-none font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   Send inquiry
                 </button>

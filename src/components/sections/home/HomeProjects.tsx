@@ -30,7 +30,7 @@ export default function HomeProjects({ items }: HomeProjectsProps) {
               Portfolio
             </p>
             <h2 className="font-display mt-3 text-[2rem] font-medium tracking-[-0.04em] text-[#141414] md:text-[2.4rem]">
-              Selected Work
+              Portfolio Projects
             </h2>
           </motion.div>
 

@@ -36,11 +36,11 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "Minnaro Architects",
-    template: "%s | Minnaro Architects",
+    default: "Maven Projects | Architecture & Interior Design in Jaipur",
+    template: "%s | Maven Projects",
   },
   description:
-    "Minnaro Architects is a contemporary architecture and interiors studio creating calm, refined residential and commercial spaces.",
+    "Maven Projects is a premier architecture and interior design studio in Jaipur, creating modern, functional, and sustainable homes across Rajasthan.",
 
   // ✅ FAVICON ADDED HERE
   icons: {
